@@ -1,3 +1,5 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -280,13 +282,57 @@ footer p{font-size:11px;color:rgba(245,237,228,.55);letter-spacing:.04em}
 /* ══════════════════════════════════
    RESPONSIVE
 ══════════════════════════════════ */
-@media(max-width:600px){
-  nav{padding:0 12px}
-  .nav-tab{padding:0 8px;font-size:11px}
-  .hero{padding:90px 18px 60px}
-  .phones-row{gap:20px}
-  .phone{width:220px}
-  .phone-screen{height:440px}
+@media(max-width:768px){
+  /* Nav */
+  nav{padding:0 16px}
+  .nav-logo{font-size:15px}
+  .nav-tab{padding:0 10px;font-size:12px}
+
+  /* Hero */
+  .hero{padding:100px 20px 64px}
+  .hero-app-title{font-size:clamp(44px,13vw,64px)}
+  .hero-memories{font-size:clamp(32px,10vw,52px)}
+  .hero-tagline{font-size:13px;letter-spacing:.06em}
+  .hero-cta{flex-direction:column;align-items:center;gap:12px}
+  .hero-cta .btn-primary,.hero-cta .btn-ghost{width:200px;text-align:center}
+
+  /* Section titles */
+  .section-title{font-size:clamp(24px,6vw,36px)}
+  .section-sub{font-size:14px;padding:0 8px}
+
+  /* Phones — horizontal scroll */
+  .phones-section{padding:80px 0}
+  .phones-row{
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    justify-content:flex-start;
+    gap:20px;
+    padding:0 20px 20px;
+    -webkit-overflow-scrolling:touch;
+    scrollbar-width:none;
+  }
+  .phones-row::-webkit-scrollbar{display:none}
+  .phone-wrap{flex-shrink:0}
+  .phone{width:210px}
+  .phone-screen{height:430px}
+
+  /* Features */
+  .features-section{padding:80px 20px}
+  .features-grid{grid-template-columns:1fr;gap:16px;margin-top:40px}
+
+  /* Flow */
+  .flow-section{padding:80px 20px}
+  .flow-steps{margin-top:40px}
+  .flow-step{gap:16px}
+
+  /* Contact */
+  .contact-section{padding:80px 20px}
+
+  /* Footer */
+  footer{padding:40px 20px}
+  .footer-links{flex-wrap:wrap;gap:12px;justify-content:center}
+
+  /* Legal */
   .legal-wrap{padding:32px 16px 60px}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
