@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>利用規約 | TsuriMint 釣り気分と</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;800;900&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sea-deep:#0284A8;
+    --sea-mid:#12A6C4;
+    --sea-surface:#3FC7D9;
+    --foam:#F3FBFA;
+    --foam-dim:#E3F4F1;
+    --sand:#FCE9B4;
+    --coral:#FF8A5C;
+    --coral-dim:#FFE4D5;
+    --coral-deep:#FF6A3D;
+    --seaweed:#1B9E82;
+    --ink:#0B3B4A;
+    --sub:#5C8894;
+    --line:#D6EFEE;
+    --maxw:820px;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    font-family:"Noto Sans JP","Hiragino Sans","Hiragino Kaku Gothic ProN",system-ui,sans-serif;
+    color:var(--ink);
+    background:var(--foam);
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--sea-deep);}
+  .wrap{max-width:var(--maxw); margin:0 auto; padding:0 24px;}
+
+  header.nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(243,251,250,.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-inner{
+    max-width:1180px; margin:0 auto; padding:0 24px;
+    display:flex; align-items:center; justify-content:space-between;
+    height:68px;
+  }
+  .nav-logo{ display:flex; align-items:center; gap:10px; font-weight:900; font-size:19px; letter-spacing:.02em; text-decoration:none; color:var(--ink); }
+  .nav-logo .mark{ width:34px; height:34px; border-radius:10px; overflow:hidden; flex-shrink:0; box-shadow:0 2px 8px rgba(2,60,80,.25); }
+  .nav-logo .mark img{ width:100%; height:100%; object-fit:cover; }
+  .nav-logo .sub{ font-size:12.5px; font-weight:500; color:var(--sub); letter-spacing:.03em; margin-top:1px; }
+  .nav-back{ font-size:14.5px; font-weight:700; color:var(--sea-deep); text-decoration:none; display:flex; align-items:center; gap:6px; }
+  .nav-back:hover{ opacity:.75; }
+
+  .legal-hero{ padding:56px 0 20px; }
+  .legal-eyebrow{ font-size:13.5px; font-weight:800; color:var(--seaweed); letter-spacing:.1em; text-transform:uppercase; margin-bottom:10px; }
+  .legal-title{ font-size:30px; font-weight:900; margin:0 0 12px; line-height:1.4; }
+  .legal-meta{ font-size:14px; color:var(--sub); margin:0 0 8px; }
+
+  .legal-body{ padding:8px 0 80px; }
+  .legal-note{
+    background:#fff; border:1px solid var(--line); border-radius:14px; padding:18px 20px;
+    font-size:14px; color:var(--sub); line-height:1.9; margin-bottom:40px;
+  }
+  .legal-note strong{ color:var(--ink); }
+
+  article section{ margin-bottom:34px; }
+  article h2{ font-size:18.5px; font-weight:800; color:var(--ink); margin:0 0 12px; display:flex; gap:10px; align-items:baseline; }
+  article h2 .num{ color:var(--sea-deep); font-family:ui-monospace,monospace; font-weight:900; }
+  article p{ font-size:15px; line-height:2; color:var(--ink); margin:0 0 12px; }
+  article ol, article ul{ margin:0 0 12px; padding-left:1.5em; }
+  article li{ font-size:15px; line-height:1.95; color:var(--ink); margin-bottom:8px; }
+  article table{ width:100%; border-collapse:collapse; margin:14px 0 20px; font-size:14px; }
+  article th, article td{ border:1px solid var(--line); padding:10px 12px; text-align:left; line-height:1.7; }
+  article th{ background:var(--foam-dim); font-weight:800; width:30%; }
+  .legal-updated{ font-size:13.5px; color:var(--sub); text-align:right; margin-top:50px; padding-top:20px; border-top:1px solid var(--line); }
+
+  footer{ background:var(--ink); color:rgba(255,255,255,.7); padding:28px 0; }
+  .footer-inner{ max-width:1180px; margin:0 auto; padding:0 24px; display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px; font-size:13.5px; }
+  footer a{ color:rgba(255,255,255,.7); text-decoration:none; }
+  footer a:hover{ color:#fff; }
+
+  @media (max-width:600px){
+    .legal-title{ font-size:24px; }
+    .nav-logo .sub{ display:none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a class="nav-logo" href="index.html">
+      <div class="mark"><img src="icon.jpg" alt="TsuriMint アイコン"></div>
+      <div>TsuriMint<div class="sub">釣り気分と</div></div>
+    </a>
+    <a class="nav-back" href="index.html">← トップに戻る</a>
+  </div>
+</header>
+
+<div class="wrap legal-hero">
+  <div class="legal-eyebrow">Terms of Service</div>
+  <h1 class="legal-title">利用規約</h1>
+  <p class="legal-meta">TsuriMint 釣り気分と(以下「本サービス」といいます)のご利用にあたっての規約です。</p>
+</div>
+
+<div class="wrap legal-body">
+  <div class="legal-note">
+    <strong>この規約について:</strong> このページは、一般的なスマートフォンアプリの利用規約に必要とされる項目を踏まえて作成した<strong>たたき台(下書き)</strong>です。公開前に、実際のサービス内容・法令(消費者契約法、資金決済法、特定商取引法など)に照らして弁護士等の専門家にご確認いただくことを強くおすすめします。
+  </div>
+
+  <article>
+    <section>
+      <h2><span class="num">第1条</span>適用</h2>
+      <p>この利用規約(以下「本規約」といいます)は、NexioLaVs(以下「運営者」といいます)が提供するスマートフォンアプリケーション「TsuriMint 釣り気分と」(以下「本サービス」といいます)の利用条件を定めるものです。ユーザーの皆様(以下「ユーザー」といいます)には、本規約に従って本サービスをご利用いただきます。</p>
+      <p>ユーザーは、本サービスを利用することにより、本規約に同意したものとみなされます。</p>
+    </section>
+
+    <section>
+      <h2><span class="num">第2条</span>利用登録</h2>
+      <p>本サービスの利用を希望する方は、本規約に同意の上、運営者の定める方法(Googleアカウントまたは Apple ID を用いた認証など)によって利用登録を申請し、運営者がこれを承認することによって、利用登録が完了するものとします。</p>
+      <p>運営者は、利用登録の申請者に以下の事由があると判断した場合、利用登録の申請を承認しないことがあり、その理由について開示する義務を負わないものとします。</p>
+      <ol>
+        <li>虚偽の事項を届け出た場合</li>
+        <li>本規約に違反したことがある者からの申請である場合</li>
+        <li>未成年者、成年被後見人、被保佐人または被補助人のいずれかであって、法定代理人、後見人、保佐人または補助人の同意等を得ていなかった場合</li>
+        <li>反社会的勢力等(暴力団、暴力団員、右翼団体、反社会的勢力、その他これらに準ずる者を意味します。以下同じ)であると運営者が判断した場合</li>
+        <li>その他、運営者が利用登録を相当でないと判断した場合</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2><span class="num">第3条</span>アカウントの管理</h2>
+      <p>ユーザーは、自己の責任において、本サービスにおけるアカウント情報(認証情報を含みます)を適切に管理するものとし、これを第三者に利用させ、貸与、譲渡、名義変更、売買等をしてはならないものとします。</p>
+      <p>アカウント情報の管理不十分、使用上の過誤、第三者の使用等によって生じる損害に関する責任は、運営者に故意または重大な過失がある場合を除き、ユーザーが負うものとし、運営者は一切の責任を負いません。</p>
+    </section>
+
+    <section>
+      <h2><span class="num">第4条</span>禁止事項</h2>
+      <p>ユーザーは、本サービスの利用にあたり、以下の行為をしてはなりません。</p>
+      <ol>
+        <li>法令または公序良俗に違反する行為</li>
+        <li>犯罪行為に関連する行為</li>
+        <li>運営者、本サービスの他のユーザーまたはその他第三者の知的財産権、肖像権、プライバシー、名誉その他の権利または利益を侵害する行為</li>
+        <li>実際の釣果と異なる虚偽の内容を投稿するなど、他のユーザーに誤解を与える行為</li>
+        <li>他のユーザーに関する個人情報等を、当該ユーザーの許可なく収集、開示または蓄積する行為</li>
+        <li>本サービスに関連して、反社会的勢力等に対して直接または間接に利益を供与する行為</li>
+        <li>グループ機能・チャット機能を利用し、他のユーザーに対する誹謗中傷を含むいやがらせ行為</li>
+        <li>本サービスのネットワークまたはシステム等に過度な負荷をかける行為、または運営者の設備等に支障を与える行為</li>
+        <li>運営者のサービスの運営を妨害するおそれのある行為</li>
+        <li>不正アクセスをし、またはこれを試みる行為</li>
+        <li>他のユーザーに成りすます行為</li>
+        <li>運営者が許諾しない本サービス上での宣伝、広告、勧誘、または営業行為</li>
+        <li>面識のない異性との出会いを目的とする行為</li>
+        <li>本サービスの他のユーザーの情報を収集する行為</li>
+        <li>運営者、本サービスの他のユーザーまたはその他第三者に不利益、損害、不快感を与える行為</li>
+        <li>その他、運営者が不適切と判断する行為</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2><span class="num">第5条</span>本サービスの提供の停止・中断等</h2>
+      <p>運営者は、以下のいずれかの事由があると判断した場合、ユーザーに事前に通知することなく本サービスの全部または一部の提供を停止または中断することができるものとします。</p>
+      <ol>
+        <li>本サービスにかかるシステムの保守点検または更新を行う場合</li>
+        <li>地震、落雷、火災、停電または天災などの不可抗力により、本サービスの提供が困難となった場合</li>
+        <li>コンピュータまたは通信回線等が事故により停止した場合</li>
+        <li>気象庁・海上保安庁・外部の気象/潮汐情報サービス(WeatherAPI.com 等)など、本サービスが利用する外部サービスが停止・変更・提供終了した場合</li>
+        <li>その他、運営者が本サービスの提供が困難と判断した場合</li>
+      </ol>
+      <p>運営者は、本サービスの提供の停止または中断により、ユーザーまたは第三者が被ったいかなる不利益または損害についても、一切の責任を負わないものとします。</p>
+    </section>
+
+    <section>
+      <h2><span class="num">第6条</span>利用制限および登録抹消</h2>
+      <p>運営者は、ユーザーが本規約のいずれかの条項に違反した場合、事前の通知なく、投稿データの全部または一部を削除し、ユーザーに対して本サービスの全部もしくは一部の利用を制限し、またはユーザーとしての登録を抹消することができるものとします。</p>
+      <p>本条に基づき運営者が行った行為により、ユーザーに生じた損害について、運営者は一切の責任を負いません。</p>
+    </section>
+
+    <section>
+      <h2><span class="num">第7条</span>退会</h2>
+      <p>ユーザーは、運営者の定める手続により、いつでも本サービスから退会し、自己の登録を抹消することができるものとします。</p>
+    </section>
+
+    <section>
+      <h2><span class="num">第8条</span>プレミアムプラン(有償機能)</h2>
+      <p>運営者は、本サービスの一部の機能(釣行レポート、魚拓コレクション、釣り場情報の閲覧、天気マップの拡張機能、広告非表示など。以下「プレミアム機能」といいます)を、月額利用料(本書執筆時点で月額200円(税込)。金額は変更されることがあります)を支払うユーザー(以下「プレミアム会員」といいます)に提供します。</p>
+      <p>プレミアム機能の利用料の決済は、Apple App Store または Google Play を通じた継続課金(サブスクリプション)により行われます。決済、請求、自動更新、および解約の方法については、各ストアの定める規約が適用されます。</p>
+      <ol>
+        <li>プレミアム会員の資格は、契約期間満了時に自動的に更新されるものとし、ユーザーが各ストアの定める方法による更新停止の手続きを行わない限り、次回更新日以降も利用料を請求されます。</li>
+        <li>既にお支払いいただいた利用料は、法令に特別の定めがある場合を除き、返金されません。</li>
+        <li>運営者は、プレミアム機能の内容および料金を変更することがあり、変更後の内容は本サービス上での掲示その他運営者が適当と判断する方法により周知します。</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2><span class="num">第9条</span>魚拓コレクションのポイントについて</h2>
+      <p>プレミアム会員は、釣果の写真からAIが魚拓風アートを生成する魚拓コレクション機能を利用できます。同機能の利用にあたり、以下のポイント制度が適用されます。</p>
+      <ol>
+        <li>プレミアム会員には、運営者の定める周期(月次)で、一定数のポイント(本書執筆時点で100ポイント)が付与されます。</li>
+        <li>魚拓風アート1回生成するごとに、一定数のポイント(本書執筆時点で10ポイント)を消費します。</li>
+        <li>付与されたポイントは、翌周期に繰り越されません。</li>
+        <li>ポイントには金銭的価値はなく、現金または他のポイント・仮想通貨等への換金・払戻・譲渡はできません。</li>
+        <li>プレミアム会員としての資格が喪失した場合、保有するポイントは失効するものとします。</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2><span class="num">第10条</span>投稿データの取扱いおよび知的財産権</h2>
+      <p>ユーザーが本サービスに投稿した釣果の記録、写真、コメントその他のデータ(以下「投稿データ」といいます)における著作権その他の知的財産権は、当該投稿を行ったユーザーその他既存の権利者に留保されます。</p>
+      <p>ユーザーは、運営者に対し、本サービスの提供・維持・改善(AIによる魚種判定・魚拓風アート生成等の機能提供を含みます)、および不祥事対応に必要な範囲で、投稿データを使用・複製・保存・加工することを許諾するものとします。</p>
+      <p>ユーザーは、投稿データについて、自ら投稿するために必要な権利を有していること、および投稿データが第三者の権利を侵害していないことを保証するものとします。</p>
+    </section>
+
+    <section>
+      <h2><span class="num">第11条</span>グループ機能について</h2>
+      <p>本サービスのグループ機能は、ユーザーが自ら発行する招待リンク等を通じて、任意のグループを作成し、そのメンバー間で釣果情報を共有できる機能です。グループへの参加は任意であり、ユーザーはグループに参加せず本サービスの記録・地図・天気情報等の基本機能を単独で利用することができます。</p>
+      <p>ユーザーがグループ内に投稿した情報は、当該グループのメンバーに共有されます。運営者は、グループメンバーによる投稿内容の適法性・正確性について保証せず、グループ内でのやり取りに起因して生じたユーザー間のトラブルについて、運営者は一切の責任を負いません。</p>
+    </section>
+
+    <section>
+      <h2><span class="num">第12条</span>広告の表示</h2>
+      <p>運営者は、無料プランのユーザーに対し本サービス内に第三者配信の広告(Google AdMob 等)を表示することがあります。プレミアム会員は、広告非表示機能により当該広告の表示を停止することができます。</p>
+    </section>
+
+    <section>
+      <h2><span class="num">第13条</span>本サービスの内容に関する免責事項</h2>
+      <p>本サービスで提供する潮汐・気象情報は、気象庁、海上保安庁(海しる)、WeatherAPI.com その他の外部データ提供元の情報をもとに表示しているものであり、その正確性、最新性、安全性を保証するものではありません。実際の釣行にあたっては、必ず現地の状況や公的機関が発表する最新の気象・海象情報を確認してください。</p>
+      <p>本サービスが提供するAIによる魚種判定機能は、参考情報として提供するものであり、その判定結果の正確性を保証するものではありません。食用の可否や毒性の有無を含む魚種の最終的な確認は、必ずユーザー自身の責任において行ってください。運営者は、AIの判定結果を理由とする損害について、一切の責任を負いません。</p>
+      <p>本サービスに掲載される釣り場情報は、ユーザーの投稿等をもとに構成されている場合があり、現況と異なることがあります。現地の施設管理者・漁業関係者等の指示や立入禁止区域、規則を必ず遵守してください。</p>
+      <p>運営者は、本サービスに事実上または法律上の瑕疵(安全性、信頼性、正確性、完全性、有効性、特定の目的への適合性、セキュリティ等に関する欠陥、エラーやバグ、権利侵害等を含みます)がないことを明示的にも、黙示的にも保証しておりません。</p>
+    </section>
+
+    <section>
+      <h2><span class="num">第14条</span>保証の否認および免責事項</h2>
+      <p>運営者は、本サービスに起因してユーザーに生じたあらゆる損害について、運営者の故意または重大な過失による場合を除き、一切の責任を負いません。</p>
+      <p>前項ただし書に定める場合であっても、運営者は、運営者の過失(重大な過失を除きます)による債務不履行または不法行為によりユーザーに生じた損害のうち特別な事情から生じた損害(運営者またはユーザーが損害発生につき予見し、または予見し得た場合を含みます)について一切の責任を負いません。また、運営者の過失(重大な過失を除きます)による債務不履行または不法行為によりユーザーに生じた損害の賠償は、ユーザーから当該損害が生じた月に受領した利用料の額を上限とします。</p>
+      <p>本サービスに関してユーザーと第三者との間において生じた取引、連絡または紛争等について、運営者は一切責任を負いません。</p>
+    </section>
+
+    <section>
+      <h2><span class="num">第15条</span>サービス内容の変更等</h2>
+      <p>運営者は、ユーザーへの事前の告知なしに、本サービスの内容を変更、追加または廃止することがあり、ユーザーはこれを承諾するものとします。</p>
+    </section>
+
+    <section>
+      <h2><span class="num">第16条</span>利用規約の変更</h2>
+      <p>運営者は、必要と判断した場合には、ユーザーに通知することなくいつでも本規約を変更することができるものとします。なお、本規約の変更後、本サービスの利用を開始した場合には、当該ユーザーは変更後の規約に同意したものとみなします。</p>
+    </section>
+
+    <section>
+      <h2><span class="num">第17条</span>個人情報の取扱い</h2>
+      <p>運営者は、本サービスの利用によって取得する個人情報については、別途定める<a href="privacy.html">プライバシーポリシー</a>」に従い、適切に取扱うものとします。</p>
+    </section>
+
+    <section>
+      <h2><span class="num">第18条</span>通知または連絡</h2>
+      <p>ユーザーと運営者との間の通知または連絡は、運営者の定める方法によって行うものとします。運営者は、ユーザーから、運営者が定める方式に従った変更届け出がない限り、現在登録されている連絡先を有効なものとみなして当該連絡先へ通知または連絡を行い、これらは発信時にユーザーへ到達したものとみなします。</p>
+    </section>
+
+    <section>
+      <h2><span class="num">第19条</span>権利義務の譲渡の禁止</h2>
+      <p>ユーザーは、運営者の書面による事前の承諾なく、利用契約上の地位または本規約に基づく権利もしくは義務について、第三者に譲渡し、または担保に供することはできません。</p>
+    </section>
+
+    <section>
+      <h2><span class="num">第20条</span>準拠法・裁判管轄</h2>
+      <p>本規約の解釈にあたっては、日本法を準拠法とします。</p>
+      <p>本サービスに関して紛争が生じた場合には、福岡地方裁判所を第一審の専属的合意管轄とします。</p>
+    </section>
+  </article>
+
+  <div class="legal-updated">制定日:2026年8月16日</div>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <span>&copy; 2026 TsuriMint. All rights reserved.</span>
+    <span><a href="index.html">トップページ</a> ・ <a href="privacy.html">プライバシーポリシー</a></span>
+  </div>
+</footer>
+
+</body>
+</html>
