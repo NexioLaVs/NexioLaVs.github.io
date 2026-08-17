@@ -223,6 +223,20 @@
     background:var(--coral-dim); padding:3px 10px; border-radius:20px;
   }
 
+  .screens-scroll{
+    display:flex; gap:24px; overflow-x:auto; padding:8px 4px 20px;
+    scroll-snap-type:x mandatory; -webkit-overflow-scrolling:touch;
+  }
+  .screens-scroll::-webkit-scrollbar{ height:8px; }
+  .screens-scroll::-webkit-scrollbar-thumb{ background:var(--line); border-radius:8px; }
+  .screen-item{ flex:0 0 auto; width:220px; scroll-snap-align:start; text-align:center; }
+  .screen-phone{
+    background:var(--ink); border-radius:28px; padding:9px;
+    box-shadow:0 30px 50px -18px rgba(2,30,40,.45), 0 0 0 1px rgba(255,255,255,.08) inset;
+  }
+  .screen-phone img{ width:100%; display:block; border-radius:19px; }
+  .screen-caption{ margin-top:14px; font-size:14px; font-weight:700; color:var(--ink); }
+
   .ic-a{ background:linear-gradient(135deg,var(--sea-surface),var(--sea-deep)); }
   .ic-b{ background:linear-gradient(135deg,#FF8A5C,var(--coral-deep)); }
   .ic-c{ background:linear-gradient(135deg,#3FBF9E,var(--seaweed)); }
@@ -288,6 +302,7 @@
     </div>
     <nav class="nav-links">
       <a href="#features">特徴</a>
+      <a href="#screenshots">画面</a>
       <a href="#how">使い方</a>
       <a href="#premium">プレミアム</a>
     </nav>
@@ -468,6 +483,42 @@
   </div>
 </section>
 
+<section id="screenshots">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-eyebrow">Screenshots</div>
+      <h2 class="section-title">実際の画面を見てみる</h2>
+      <p class="section-desc">記録・図鑑・天気・コレクションまで、アプリ内の主要な画面をそのままご紹介します。</p>
+    </div>
+    <div class="screens-scroll">
+      <div class="screen-item">
+        <div class="screen-phone"><img src="screenshots/01-home.jpg" alt="ホーム画面。潮汐グラフと仲間の釣果が表示されている" loading="lazy"></div>
+        <div class="screen-caption">ホーム(潮汐・仲間の釣果)</div>
+      </div>
+      <div class="screen-item">
+        <div class="screen-phone"><img src="screenshots/02-post.jpg" alt="釣果を記録する投稿画面" loading="lazy"></div>
+        <div class="screen-caption">釣果を記録</div>
+      </div>
+      <div class="screen-item">
+        <div class="screen-phone"><img src="screenshots/03-guide-detail.jpg" alt="魚種図鑑の詳細画面。アオリイカの釣り方が表示されている" loading="lazy"></div>
+        <div class="screen-caption">魚種図鑑(釣り方・仕掛け)</div>
+      </div>
+      <div class="screen-item">
+        <div class="screen-phone"><img src="screenshots/04-collection-guide.jpg" alt="図鑑コレクション画面" loading="lazy"></div>
+        <div class="screen-caption">図鑑コレクション</div>
+      </div>
+      <div class="screen-item">
+        <div class="screen-phone"><img src="screenshots/05-weather-map.jpg" alt="天気マップ画面。地図上に風速が表示されている" loading="lazy"></div>
+        <div class="screen-caption">天気マップ・予報</div>
+      </div>
+      <div class="screen-item">
+        <div class="screen-phone"><img src="screenshots/06-collection-gyotaku.jpg" alt="魚拓コレクション画面" loading="lazy"></div>
+        <div class="screen-caption">魚拓コレクション</div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section id="how" class="how-section">
   <div class="wrap">
     <div class="section-head">
@@ -561,6 +612,7 @@
       </div>
       <div class="footer-links">
         <a href="#features">特徴</a>
+        <a href="#screenshots">画面</a>
         <a href="#how">使い方</a>
         <a href="#premium">プレミアム</a>
         <a href="terms.html">利用規約</a>
